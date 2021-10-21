@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import Kingfisher
+
+
+
 
 class NewsTableViewCell: UITableViewCell {
 
@@ -15,8 +19,14 @@ class NewsTableViewCell: UITableViewCell {
     
     func setup(_ article: Article){
         cellLabel.text = article.title
-        cellimage.image = UIImage(named: "Portugal")
+        cellimage.kf.setImage(with: article.urlToImage?.asURL)
         
-    }
     
-}
+   
+    }
+    }
+
+    
+    
+    
+

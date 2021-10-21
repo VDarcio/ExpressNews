@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,9 +27,9 @@
                                     <constraint firstAttribute="height" constant="356" id="iUB-nd-KWc"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29A-b2-anT">
-                                <rect key="frame" x="20" y="306" width="340" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29A-b2-anT">
+                                <rect key="frame" x="20" y="312" width="320" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -40,12 +41,13 @@
                             <constraint firstItem="29A-b2-anT" firstAttribute="leading" secondItem="qcW-rA-4Ao" secondAttribute="leading" constant="20" id="a2W-Xl-2qk"/>
                             <constraint firstAttribute="bottom" secondItem="29A-b2-anT" secondAttribute="bottom" constant="20" id="abR-H9-me4"/>
                             <constraint firstItem="aEv-WC-eOX" firstAttribute="leading" secondItem="qcW-rA-4Ao" secondAttribute="leading" id="aie-RV-skt"/>
-                            <constraint firstAttribute="trailing" secondItem="29A-b2-anT" secondAttribute="trailing" id="mJq-D6-BZi"/>
+                            <constraint firstAttribute="trailing" secondItem="29A-b2-anT" secondAttribute="trailing" constant="20" id="mJq-D6-BZi"/>
                             <constraint firstAttribute="trailing" secondItem="aEv-WC-eOX" secondAttribute="trailing" id="pcX-UE-AVk"/>
                             <constraint firstAttribute="width" constant="360" id="zPp-Jg-eSN"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="qcW-rA-4Ao" secondAttribute="bottom" id="6Vo-8r-pgg"/>
                     <constraint firstItem="qcW-rA-4Ao" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9El-qo-dxj"/>
@@ -54,6 +56,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="cellLabel" destination="29A-b2-anT" id="lzc-Ah-5UC"/>
                 <outlet property="cellimage" destination="aEv-WC-eOX" id="NJo-Oj-w9v"/>
