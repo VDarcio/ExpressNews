@@ -28,6 +28,10 @@ class DetailViewController: UIViewController {
         ProgressHUD.dismiss()
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
     
     func PopulateView(){
         descriptionLabel.text = article.description ?? ""
@@ -43,7 +47,17 @@ class DetailViewController: UIViewController {
         
     }
     
-
+    @IBAction func readMorePressed(_ sender: Any) {
+        
+        let article = self.article
+        
+        let newVc = storyboard?.instantiateViewController(withIdentifier: "webview") as! ReadMoreViewController
+        
+        newVc.articleURL = article.url
+        navigationController?.pushViewController(newVc, animated: true)
+        
+    }
+    
     
 
 }

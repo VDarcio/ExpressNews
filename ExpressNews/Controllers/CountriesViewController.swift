@@ -8,6 +8,8 @@
 import UIKit
 
 class CountriesViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    static var session = 0
 
     @IBOutlet weak var tableView: UITableView!
     let countries : [Country] = [
@@ -39,6 +41,7 @@ class CountriesViewController: UIViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         HomeViewController.currentCountry = countries[indexPath.row]
         navigationController?.popToRootViewController(animated: true)
+        CountriesViewController.session = 1
     }
     
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E9847E5FB5B84C8D73A50A2 /* Pods_ExpressNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EC93BD76E901C3DE9CA3B4 /* Pods_ExpressNews.framework */; };
 		75240A0D2720516200F98266 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75240A0C2720516200F98266 /* DetailViewController.swift */; };
+		7532B4CF2723295C00A780C5 /* ReadMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7532B4CE2723295C00A780C5 /* ReadMoreViewController.swift */; };
 		755104F8271E2B74003CD12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755104F7271E2B74003CD12D /* AppDelegate.swift */; };
 		755104FA271E2B74003CD12D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755104F9271E2B74003CD12D /* SceneDelegate.swift */; };
 		755104FF271E2B74003CD12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755104FD271E2B74003CD12D /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		2953C4ECE8C640CD8B72E765 /* Pods-ExpressNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpressNews.release.xcconfig"; path = "Target Support Files/Pods-ExpressNews/Pods-ExpressNews.release.xcconfig"; sourceTree = "<group>"; };
 		75240A0C2720516200F98266 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7532B4CE2723295C00A780C5 /* ReadMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMoreViewController.swift; sourceTree = "<group>"; };
 		755104F4271E2B74003CD12D /* ExpressNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpressNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		755104F7271E2B74003CD12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		755104F9271E2B74003CD12D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				7551050C271E30E2003CD12D /* HomeViewController.swift */,
 				75B7EBBA271F324B00777117 /* CountriesViewController.swift */,
 				75240A0C2720516200F98266 /* DetailViewController.swift */,
+				7532B4CE2723295C00A780C5 /* ReadMoreViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				75B1FF85271E3EAD00348FDB /* NewsTableViewCell.swift in Sources */,
 				75510515271E341C003CD12D /* CountryModel.swift in Sources */,
 				7551050D271E30E2003CD12D /* HomeViewController.swift in Sources */,
+				7532B4CF2723295C00A780C5 /* ReadMoreViewController.swift in Sources */,
 				75EE264E271E72DF00F54004 /* Urlstring+extension.swift in Sources */,
 				75B1FF88271E3F4800348FDB /* Constants.swift in Sources */,
 				75240A0D2720516200F98266 /* DetailViewController.swift in Sources */,

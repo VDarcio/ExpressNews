@@ -42,14 +42,25 @@ class HomeViewController: UIViewController, NewsManagerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         navigationController?.isNavigationBarHidden = true
-        ProgressHUD.show()
-        model.request(category: "General", country: HomeViewController.currentCountry.name!)
-        CurrentButton = GeneralButton
-        setupButtons()
-        countryFlag.image = HomeViewController.currentCountry.flag
-        tableView.reloadData()
-        ProgressHUD.dismiss()
-    }
+       
+           
+                countryFlag.image = HomeViewController.currentCountry.flag
+              
+                
+            }
+            
+        
+        
+       
+        
+        
+        
+    
+    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//
+//    }
     
   
     
